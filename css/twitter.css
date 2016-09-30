@@ -1,0 +1,12 @@
+.navbar {
+position:absolute;
+height: 9%;
+}
+
+body{
+  padding-top: 80px;
+}
+
+.twitter-search {
+  width: 395px !important;
+}

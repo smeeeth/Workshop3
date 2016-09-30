@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head;
+    any other head content must come *after* these tags -->
+    <title>Twitter</title>
+    <!-- Bootstrap's CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/twitter.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Our Twitter layout will go here. -->
+
+    <nav class="navbar navbar-fixed-top navbar-default">
+      <!-- ".container-fluid" expands to fill the entire browser view's width.
+      ".container" will use the same width as the ".container" in the body,
+      which contains the three columns of content.
+      We want ".container" here so the navbar is the same width as the content.
+      Confused? Try switching between the two container classes once you have a
+      complete navbar to see the difference. -->
+      <div class="container">
+        <!-- This code is only active when viewing the site on mobile. We will not
+        cover responsive design, but we'll leave this in, as it's part of the
+        example code.-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- On mobile, this div is hidden by default. The user hits the button
+      in the `navbar-header` to see the content of the div.
+      On desktop, this div is visible all of the time. -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-left" role="search">
+          <!-- Left-aligned items. -->
+          <a class="navbar-brand" href="#">
+            <span class="glyphicon glyphicon-home"/>
+            Home
+            <span class="glyphicon glyphicon-flash"/>
+            Moments
+            <span class="glyphicon glyphicon-bell"/>
+            Notifications
+            <span class="glyphicon glyphicon-envelope"/>
+            Messages
+          </a>
+        </ul>
+        <div class="input-group">
+          <input type="text" class="form-control twitter-search navbar-btn" placeholder="Search Twitter">
+          <button type="submit" class="btn btn-default navbar-btn">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+          <button type="submit" class="btn btn-default navbar-btn">
+            PIC
+          </button>
+          <button type="submit" class="btn btn-default navbar-btn">
+            <span class="glyphicon glyphicon-edit"/>
+            Tweet
+          </button>
+        </div>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+
+    <!-- The container for our grid. The outermost grid must be placed within
+    a `container` or `container-fluid` class. (Meaning: If you nest a grid
+    within a grid, you should not define another `container`)
+    What's the difference between these two types of container? There's a
+    good answer here: http://stackoverflow.com/a/22263969 -->
+    <div class="container">
+      <!-- The row that contains the three main columns of the website. -->
+      <div class="row">
+        <!-- Left sidebar: A cell that spans 2 columns -->
+        <div class="col-md-3"></div>
+        <!-- Main feed: A cell that spans 7 columns -->
+        <div class="col-md-7">
+          <!-- Status update #1 -->
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <!-- Post metadata -->
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="media">
+                    <div class="media-left media-top"> PIC </div>
+                    <div class="media-body">
+                      <a href="#">NASA
+                        <span class="glyphicon glyphicon-edit"/>
+                      </a>
+                      <br> @NASA
+                    </div>
+                  </div>
+                </div>
+                  <div class="col-md-2">
+                    <div class="input group">
+                      <button type="submit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-cog"/>
+                      </button>
+                      <button type="submit" class="btn btn-default">
+                        Following
+                      </button>
+                    </div>
+                  </div>
+              </div>
+              <!-- Post content -->
+              <div class="row">
+                <div class="col-md-12">
+                  This spiral galaxy hosts a supermassive black hole that's also super-hungry:
+                  <br>
+                  <a href="#">http://go.nasa.gov/1Rp6V2w </a>
+                  <a href="#">@NASA_Hubble</a>
+                  <br>
+                  <img src="img/hubble.jpg" width="100%" />
+                  <button type="submit" class="btn btn-default">
+                    Retweets
+                    <br>
+                    1,787
+                  </button>
+                  <button type="submit" class="btn btn-default">
+                    Likes
+                    <br>
+                    2,188
+                  </button>
+                  <a href="#"> PIC </a>
+                  <a href="#"> PIC </a>
+                  <a href="#"> PIC </a>
+                  <a href="#"> PIC </a>
+                  <a href="#"> PIC </a>
+                  <a href="#"> PIC </a>
+                  <a href="#"> PIC </a>
+                  <br>
+                  12:44 PM · 8 Jan 2016
+                  <br>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-arrow-left"/>
+                  </a>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-retweet"/>
+                  </a>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-heart"/>
+                  </a>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-option-horizontal"/>
+                  </a>
+                  <br>
+                  PIC
+                  <input type="text" class="form-control twitter-search" placeholder="Reply to @NASA, @NASA_Hubble">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right sidebar: A cell that spans 3 columns -->
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below),
+    or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
